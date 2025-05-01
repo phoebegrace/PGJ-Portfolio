@@ -1,16 +1,27 @@
 import React from 'react'
 import CardLayout from '../Common/CardLayout'
+import { useRouter } from 'next/router'
 
 const Exp_Card = ({ data }) => {
+    const router = useRouter();
+
+    const handleClick = () => {
+        if (data.title === 'Primof Funnel Marketing Solutions Inc.') {
+            router.push('/portfolio#primof');
+        } else if (data.title.toLowerCase().includes('aespaverse')) {
+            router.push('/portfolio#aespaverse');
+        }
+    };
+
     return (
         <CardLayout>
-            <div className="card_stylings transition px-8 py-10 ">
+            <div onClick={handleClick} className="card_stylings transition px-8 py-10 cursor-pointer">
                 <div className="flex-initial text-[17px] text-Snow font-medium">{data.title}</div>
                 <div className="text-sm text-LightGray font-normal italic mt-1 ">
                     {data.role}
                 </div>
                 <div className="text-LightGray text-xs opacity-50 font-normal italic">
-                    <a href={`${data.url}`} target="_blank" rel="noreferrer">
+                    <a href={data.url} target="_blank" rel="noreferrer">
                         {data.url}
                     </a>
                 </div>

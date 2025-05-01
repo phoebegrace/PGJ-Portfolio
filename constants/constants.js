@@ -1,67 +1,69 @@
-export const NAME = 'Muhammad Osama Javaid';
+export const NAME = 'Phoebe Grace Juayong';
 
-export const DESIGNATION = `MERN Stack Developer | Open Source Contributor | Tech Blogger`;
+export const DESIGNATION = `Web Developer | Content Editor | Sound Enthusiast`;
 
 export const DETAILS = {
-  Residence: 'Pakistan',
-  City: 'Peshawar',
-  Age: '23',
+  Residence: 'Philippines',
+  City: 'Antique',
+  Age: '22',
 };
 
 export const SKILLS = [
   {
-    title: 'MERN Stack Developer',
+    title: 'Web Developer',
     level: '75%',
   },
   {
-    title: 'React Developer',
+    title: 'Wireframing',
+    level: '93%',
+  },
+  {
+    title: 'Content Editor',
     level: '91%',
   },
-  // {
-  //   title: 'Desktop Application Developer',
-  //   level: '75%',
-  // },
+  {
+    title: 'Desktop Application Developer',
+    level: '55%',
+  },
   {
     title: 'Backend Developer',
     level: '54%',
   },
   {
-    title: 'Technical Blogger',
-    level: '83%',
+    title: 'AI & Machine Learning',
+    level: '63%',
   },
 ];
 
 export const TECH_STACK = [
   'JavaScript',
   'ReactJS',
-  'NextJS',
   'TypeScript',
   'NodeJS',
-  'Redux',
-  'Zustand',
   'CSS',
-  'SCSS',
-  'TailwindCSS',
-  'Ant Design',
-  'Material UI',
-  'Next UI',
-  'REST API',
-  'MongoDB',
+  'HTML',
   'MySQL',
   'Git',
   'GitHub',
-  'Jira',
   'Figma',
-  'Adobe XD',
+  'Adobe Photoshop',
+  'Canva',
+  'Capcut',
+  'Adobe Premiere Pro',
+  'Spline',
+  'RVC',
+  'Audacity',
+  'MS Office',
+  'Flutter',
 ];
 
 export const CONTACTS = {
-  EMAIL: 'iosamajavaid@gmail.com',
-  PHONE: '+923159591822',
+  EMAIL: 'juayongphoebe@gmail.com',
+  PHONE: '+639618080709',
 };
 export const SOCIAL_LINKS = {
-  GITHUB: 'https://github.com/osamajavaid',
-  LINKEDIN: 'https://www.linkedin.com/in/iosamajavaid/',
-  TWITTER: 'https://twitter.com/iosamajavaid',
-  FACEBOOK: 'https://www.facebook.com/iosamajavaid',
+  GITHUB: 'https://github.com/phoebegrace/',
+  LINKEDIN: 'https://www.linkedin.com/in/phoebe-grace-juayong-785863290/',
+  INSTAGRAM: 'https://instagram.com/chosenphoebe/',
+  FACEBOOK: 'https://www.facebook.com/juayongphoebe',
 };

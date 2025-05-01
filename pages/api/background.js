@@ -3,24 +3,24 @@ const background = [
         eduCards: [
             {
                 id: 0,
-                title: 'UET Peshawar',
-                degree: 'BS, Computer System Engineering',
-                detail: "Bachelor's Degree in Computer System Engineering from UET Peshawar.",
-                year: '2018-2022'
+                title: 'West Visayas State University',
+                degree: 'BS, Computer Science',
+                detail: "Bachelor's Degree in Computer Science Major in Artificial Intelligence.",
+                year: '2021-2025'
             },
             {
                 id: 1,
-                title: 'Peshawar Model Degree College',
-                degree: 'HSSC, Pre Engineering',
-                detail: "Completed FSC part 1 and part 2 in Pre-Engineering from Peshawar Model Degree College.",
-                year: '2015-2017'
+                title: 'Governor Julian F.Pacificador National School',
+                degree: 'STEM',
+                detail: "Science Technology Engineering Mathematics",
+                year: '2015-2021'
             },
             {
                 id: 2,
-                title: 'Falcon Academy',
-                degree: 'SSC, Science Subjects',
-                detail: "Completed SSC part 1 and part 2 in Science subjects from Falcon Academy Seni Gumbat Kohat",
-                year: '2013-2015'
+                title: 'TESDA',
+                degree: 'Java Programming NCIII',
+                detail: "Completed Java Programming NCIII and topped the OCA Mock Exam",
+                year: '2022'
             },
         ]
     },
@@ -28,30 +28,30 @@ const background = [
         expCards: [
             {
                 id: 1,
-                title: 'JMM Technologies',
-                role: 'Frontend Developer',
-                url: 'https://jmm.ltd/',
-                desc: 'As a frontend developer, I use React, Next & JavaScript to build user interfaces for web applications.',
-                year: '02/2023 - Present',
-                location: 'Peshawar, Pakistan'
+                title: 'Primof Funnel Marketing Solutions Inc.',
+                role: 'Intern ',
+                url: '/portfolio',
+                desc: 'Handled funnel creation and full-stack web development using GoHighLevel (GHL), from front-end to back-end implementation and Integrated AI-powered tools and automation into client funnel systems. ',
+                year: '01/2025 - 04/2025',
+                location: 'Iloilo City, Philippines'
             },
             {
                 id: 2,
-                title: 'HauzaTech',
-                role: 'Internee',
-                url: 'no website',
-                desc: 'As an Internee, I learned how to use React & JavaScript to build interactive websites.',
-                year: '02/2023 - Present',
-                location: 'Peshawar, Pakistan'
+                title: 'aespaversePH',
+                role: 'Founder and Creative Content Creator',
+                url: 'https://aespaverseiloilo.carrd.co',
+                desc: 'Designed and produced creative materials, including pubmats and videos, for fan events and community projects. Led and managed large-scale events such as cinema block screenings with 200+ attendees and received positive feedbacks.',
+                year: '03/2024 - Present',
+                location: 'Iloilo City, Philippines'
             },
             {
                 id: 3,
-                title: 'Encoder Bytes',
-                role: 'PHP Developer',
-                url: 'https://www.encoderbytes.com/',
-                desc: "I work there as a PHP developer, there I learned how to do CRUD'S operations in PHP, also I worked on Firebase",
-                year: '09/2020 - 02/2021',
-                location: 'Peshawar, Pakistan'
+                title: 'Ang Pagbutlak',
+                role: 'Publication Staff Writer',
+                url: 'no website',
+                desc: "Layout and wrote feature, news, and editorial articles for school publication releases. ",
+                year: '07/2015 - 04/2021',
+                location: 'Antique, Philippines'
             },
 
         ]

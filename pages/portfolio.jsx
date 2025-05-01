@@ -1,38 +1,66 @@
-import { useState } from "react";
 import { useQuery } from "react-query";
 import BannerLayout from "../components/Common/BannerLayout";
 import Footer from "../components/Footer";
 import PortfolioCard from "../components/Portfolio/PortfolioCard";
 import axios from "axios";
-import { Skeleton } from "antd";
 import ImageAndParagraphSkeleton from "../components/Common/ImageAndParagraphSkeleton";
+import { useEffect } from "react"; // ✅ ADD
+import { useRouter } from "next/router"; // ✅ ADD
 
 const Portfolio = () => {
-
     const { isLoading, error, data } = useQuery('portfolio', () =>
-        axios.get('api/portfolio')
+        axios.get('/api/portfolio')
             .then(({ data }) => data)
-            .catch(error => console.error('Error fetching testimonials:', error)))
+            .catch(error => {
+                console.error('Error fetching portfolio:', error);
+                return null;
+            })
+    );
+
+    const router = useRouter(); // ✅ ADD
+
+    // ✅ SCROLL TO HASHED SECTION AFTER LOAD
+    useEffect(() => {
+        if (!isLoading && router.asPath.includes('#')) {
+            const id = router.asPath.split('#')[1];
+            const el = document.getElementById(id);
+            if (el) {
+                setTimeout(() => {
+                    el.scrollIntoView({ behavior: 'smooth' });
+                }, 300); // delay ensures section is mounted
+            }
+        }
+    }, [isLoading, router.asPath]);
+
+    const renderCategory = (id, title, projects) => (
+        <section id={id} className="mt-10">
+            <h2 className="text-2xl font-semibold text-white mb-4">{title}</h2>
+            <div className="grid justify items-center grid-flow-row md:grid-cols-2 grid-rows-auto gap-4">
+                {projects.map((project, index) => (
+                    <PortfolioCard key={index} data={project} />
+                ))}
+            </div>
+        </section>
+    );
+
     return (
         <BannerLayout>
-            <div className="grid justify items-center grid-flow-row md:grid-cols-2 grid-rows-auto gap-4 px-8 my-6">
-
-                {
-                    isLoading ?
-                        [1, 2, 3, 4].map(() => (
-                            <ImageAndParagraphSkeleton className={"w-full object-cover"} />
-                        ))
-                        :
-                        data?.map((data, key) => (
-                            <PortfolioCard key={key} data={data} />
-                        ))
-
-                }
-
-
-            </div >
+            <div className="px-8 my-6">
+                {isLoading ? (
+                    <div className="grid md:grid-cols-2 gap-4">
+                        {[1, 2, 3, 4].map((_, i) => (
+                            <ImageAndParagraphSkeleton key={i} className="w-full object-cover" />
+                        ))}
+                    </div>
+                ) : (
+                    <>
+                        {data?.projects?.primof && renderCategory("primof", "Primof Projects", data.projects.primof)}
+                        {data?.projects?.aespaverse && renderCategory("aespaverse", "Aespaverse Projects", data.projects.aespaverse)}
+                    </>
+                )}
+            </div>
             <Footer />
-        </BannerLayout >
+        </BannerLayout>
     );
 };
 
