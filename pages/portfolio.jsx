@@ -4,8 +4,8 @@ import Footer from "../components/Footer";
 import PortfolioCard from "../components/Portfolio/PortfolioCard";
 import axios from "axios";
 import ImageAndParagraphSkeleton from "../components/Common/ImageAndParagraphSkeleton";
-import { useEffect } from "react"; // ✅ ADD
-import { useRouter } from "next/router"; // ✅ ADD
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 const Portfolio = () => {
     const { isLoading, error, data } = useQuery('portfolio', () =>
@@ -17,9 +17,9 @@ const Portfolio = () => {
             })
     );
 
-    const router = useRouter(); // ✅ ADD
+    const router = useRouter();
 
-    // ✅ SCROLL TO HASHED SECTION AFTER LOAD
+    // Smooth scroll to hash section
     useEffect(() => {
         if (!isLoading && router.asPath.includes('#')) {
             const id = router.asPath.split('#')[1];
@@ -27,7 +27,7 @@ const Portfolio = () => {
             if (el) {
                 setTimeout(() => {
                     el.scrollIntoView({ behavior: 'smooth' });
-                }, 300); // delay ensures section is mounted
+                }, 300);
             }
         }
     }, [isLoading, router.asPath]);
@@ -54,8 +54,10 @@ const Portfolio = () => {
                     </div>
                 ) : (
                     <>
+                        {data?.projects?.undergraduate && renderCategory("undergraduate", "Undergraduate Projects", data.projects.undergraduate)}
+                        {data?.projects?.personal && renderCategory("personal", "Personal Projects", data.projects.personal)}
                         {data?.projects?.primof && renderCategory("primof", "Primof Projects", data.projects.primof)}
-                        {data?.projects?.aespaverse && renderCategory("aespaverse", "Aespaverse Projects", data.projects.aespaverse)}
+                        {data?.projects?.aespaverse && renderCategory("aespaverse", "aespaverse Projects", data.projects.aespaverse)}
                     </>
                 )}
             </div>

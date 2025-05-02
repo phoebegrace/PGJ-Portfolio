@@ -1,5 +1,157 @@
 const portfolio = {
   projects: {
+    undergraduate: [
+      {
+        id: 0,
+        date: "2023-Present",
+        projectName: "ZenLens",
+        url: "https://zenlens.netlify.app/",
+        image: "projects/undergrad/zenlens.png",
+        projectDetail: "Undergraduate thesis focused on image-based stress level detection for students. I handled front-end development, Figma wireframing, and deep learning model training using the ZF-Net algorithm.",
+        technologiesUsed: [
+          { tech: "Python" },
+          { tech: "ZF-Net" },
+          { tech: "Figma" },
+          { tech: "OpenCV" },
+        ]
+      },
+      {
+        id: 3,
+        date: "2024",
+        projectName: "NaevisAsks",
+        url: "https://naevisasks-filooo.streamlit.app/",
+        image: "projects/undergrad/naevisasks.png",
+        projectDetail: "An interactive quiz app built with Python, Streamlit, and GPT-3.5 to test general knowledge in an engaging way.",
+        technologiesUsed: [
+          { tech: "Python" },
+          { tech: "Streamlit" },
+          { tech: "OpenAI GPT-3.5" }
+        ]
+      },
+      {
+        id: 1,
+        date: "2024",
+        projectName: "Ascii Art Generator",
+        url: "https://www.canva.com/design/DAGYM5MMuNs/LGpOuVPukeJ08_gmju9-jw/view?utm_content=DAGYM5MMuNs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h56b434a770",
+        image: "projects/undergrad/ascii.png",
+        projectDetail: "A desktop tool to convert images into ASCII character art using Python and OpenCV. I developed the entire system.",
+        technologiesUsed: [
+          { tech: "Python" },
+          { tech: "OpenCV" }
+        ]
+      },
+      {
+        id: 4,
+        date: "2024",
+        projectName: "Slider Puzzle Game",
+        url: "#",
+        image: "projects/undergrad/slider.png",
+        projectDetail: "A desktop puzzle game with Classic and Time Attack modes. Developed using Python.",
+        technologiesUsed: [
+          { tech: "Python" }
+        ]
+      },
+      {
+        id: 5,
+        date: "2024",
+        projectName: "DirLock",
+        url: "https://www.canva.com/design/DAGmQnTNEIw/nWitE0rj-V3T58Fe0_KRIQ/view?utm_content=DAGmQnTNEIw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbb84122323#",
+        image: "projects/undergrad/dirlock.png",
+        projectDetail: "A simple batch script (.bat) that locks and unlocks access to a specified directory.",
+        technologiesUsed: [
+          { tech: "Batch Scripting" }
+        ]
+      },
+      {
+        id: 6,
+        date: "2024",
+        projectName: "ComboChow",
+        url: "https://www.canva.com/design/DAGEmocSHjw/-d8WCzoBQcRn-KVwKqkoGg/view?utm_content=DAGEmocSHjw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h5a733f1575",
+        image: "projects/undergrad/cc.png",
+        projectDetail: "ComboChow is a platform that helps you discover delicious dishes and save money while dining. Within the app, you can browse menus from various kiosks, check product availability, and find discounts on the meals you crave. This eliminates the need to visit each kiosk individually and allows you to track your food expenses with the built-in food logging history.",
+        technologiesUsed: [
+          { tech: "Flutter" },
+          { tech: "Figma" }
+        ]
+      },
+      {
+        id: 2,
+        date: "2023",
+        projectName: "Mood.it",
+        url: "#",
+        image: "projects/undergrad/moodit.png",
+        projectDetail: "A journaling web app where users post and reflect on daily moods. I worked on the front-end and created the wireframes using Figma.",
+        technologiesUsed: [
+          { tech: "Flutter" },
+          { tech: "Figma" }
+        ]
+      }
+    ],
+
+    personal: [
+      {
+        id: 1,
+        date: "2024–present",
+        projectName: "AI Voice Edits",
+        url: "#",
+        image: "projects/personal/aivoice.png",
+        projectDetail: "I clone celebrity voices to sing songs using RVC, UVR, Audacity, and Hugging Face AI tools.",
+        technologiesUsed: [
+          { tech: "UVR" },
+          { tech: "RVC" },
+          { tech: "Audacity" },
+          { tech: "Hugging Face" }
+        ]
+      },
+      {
+        id: 0,
+        date: "2022-present",
+        projectName: "Sparkart",
+        url: "https://pebicart.vercel.app/community.html",
+        image: "projects/personal/sparkart.png",
+        projectDetail: "Originally a trading site for collectors, now used as a template for aespa photocard previews.",
+        technologiesUsed: [
+          { tech: "HTML" },
+          { tech: "CSS" },
+          { tech: "JavaScript" }
+        ]
+      },
+      {
+        id: 2,
+        date: "started 2021",
+        projectName: "Rosie x Benedict Music Edit",
+        url: "https://youtu.be/HN5D0I-T9Ig?si=1ovPnZtJRBcbvC3_",
+        image: "projects/personal/benedict.png",
+        projectDetail: "Created a duet using Rosé and Benedict Cua's voices. Benedict thanked me and asked to post it on his socials.",
+        technologiesUsed: [
+          { tech: "CapCut" }
+        ]
+      },
+      {
+        id: 3,
+        date: "started 2021",
+        projectName: "MR Removed Edits",
+        url: "https://www.youtube.com/watch?v=nwV4JSFWY4I",
+        image: "projects/personal/mrremoved.png",
+        projectDetail: "I separate vocals from instrumentals using AI-based UVR.",
+        technologiesUsed: [
+          { tech: "UVR" }
+        ]
+      },
+      {
+        id: 4,
+        date: "started 2019",
+        projectName: "Lyric Videos",
+        url: "#",
+        image: "projects/personal/lyrics.png",
+        projectDetail: "Created lyric videos as a hobby with simple editing and visual styling.",
+        technologiesUsed: [
+          { tech: "CapCut" },
+          { tech: "YouTube Studio" }
+        ]
+      }
+    ],
+
     primof: [
       {
         id: 0,
