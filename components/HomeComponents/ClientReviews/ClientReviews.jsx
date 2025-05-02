@@ -1,38 +1,42 @@
-import ReviewCard from "./ReviewCard"
-import axios from "axios";
-import { useQuery } from "react-query";
-import ParagraphSkeleton from "../../Common/ParagraphSkeleton";
-
-
+import { useQuery } from 'react-query';
+import axios from 'axios';
 
 const ClientReviews = () => {
+  const { data, isLoading } = useQuery('reviews', () =>
+    axios.get('/api/review').then(res => res.data)
+  );
 
-    const { isLoading, error, data } = useQuery('review', () =>
-        axios.get('api/review')
-            .then(({ data }) => data)
-            .catch(error => console.error('Error fetching testimonials:', error)))
+  return (
+    <div className="py-10 px-6 text-white">
+      <h2 className="text-2xl font-bold mb-6">Client Reviews</h2>
 
+      {isLoading && <p>Loading...</p>}
 
-    return (
-        <>
-            <div className="px-2 md:px-8 py-4 text-lg font-bold text-Snow">Clients Reviews</div>
-            <div className="overflow-x-auto w-full grid  justify-items-center grid-flow-col gap-4 px-2 md:px-8 pt-2 pb-4">
+      {!isLoading && data?.length === 0 && (
+        <div className="text-center mt-10">
+          <p className="text-sm text-gray-400">No reviews yet.</p>
+          <a
+            href="/contact"
+            className="button mt-4 inline-block"
+          >
+            Be My First Client!
+          </a>
+        </div>
+      )}
 
-                {
-                    isLoading ?
-                        [1, 2, 3, 4, 5].map(() => (
-                            <ParagraphSkeleton className="w-80 md:w-96 h-full p-4 md:p-8" />
-                        ))
-                        :
-                        data?.map((data, key) => (
-                            <ReviewCard key={key} data={data} />
-                        ))
-                }
-
+      {!isLoading && data?.length > 0 && (
+        <div className="grid md:grid-cols-2 gap-6">
+          {data.map((review) => (
+            <div key={review.id} className="card_stylings p-4">
+              <p className="text-sm mb-2">"{review.review}"</p>
+              <p className="text-sm font-semibold">{review.name}</p>
+              <p className="text-xs text-gray-400">{review.company}</p>
             </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
-        </>
-    )
-}
-
-export default ClientReviews
+export default ClientReviews;
