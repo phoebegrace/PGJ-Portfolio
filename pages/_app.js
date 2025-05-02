@@ -2,6 +2,7 @@ import '../styles/globals.css'
 
 import Layout from './layout'
 import { QueryClient, QueryClientProvider } from 'react-query'
+import { Analytics } from '@vercel/analytics/react'
 
 const queryClient = new QueryClient()
 
@@ -11,6 +12,7 @@ export default function App({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      <Analytics />
     </QueryClientProvider>
   )
 }
