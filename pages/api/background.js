@@ -10,7 +10,7 @@ const background = [
             },
             {
                 id: 1,
-                title: 'Governor Julian F.Pacificador National School',
+                title: 'Governor Julian Fullon Pacificador National School',
                 degree: 'STEM',
                 detail: "Science Technology Engineering Mathematics",
                 year: '2015-2021'
@@ -30,7 +30,7 @@ const background = [
                 id: 1,
                 title: 'Primof Funnel Marketing Solutions Inc.',
                 role: 'Intern ',
-                url: '/portfolio',
+                url: 'https://primof.ph/',
                 desc: 'Handled funnel creation and full-stack web development using GoHighLevel (GHL), from front-end to back-end implementation and Integrated AI-powered tools and automation into client funnel systems. ',
                 year: '01/2025 - 04/2025',
                 location: 'Iloilo City, Philippines'
