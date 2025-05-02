@@ -11,8 +11,8 @@ const background = [
             {
                 id: 1,
                 title: 'Governor Julian Fullon Pacificador National School',
-                degree: 'STEM',
-                detail: "Science Technology Engineering Mathematics",
+                degree: 'STEM (Science, Technology, Engineering, Mathematics)',
+                detail: "Boy Scout of the Philippines: Eagle Scout Rank | Supreme Student Government Officer | Consistent Honor Student",
                 year: '2015-2021'
             },
             {
