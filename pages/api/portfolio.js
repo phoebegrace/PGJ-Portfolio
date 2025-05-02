@@ -206,10 +206,10 @@ const portfolio = {
       },
       {
         id: 4,
-        projectName: "VVIP Challenge Funnel",
+        projectName: "Client Funnel",
         url: "#",
         image: "projects/primof/vvip.png",
-        projectDetail: "Designed a multi-page funnel for a VVIP client, including landing, upsell, thank-you, sign-in, sales, and onboarding pages. Prioritized user journey flow and visual alignment with branding.",
+        projectDetail: "Designed a multi-page funnel for a VVIP client, including landing, upsell, event portal, thank-you, sign-in, sales, and onboarding pages. Prioritized user journey flow and visual alignment with branding.",
         technologiesUsed: [
           { tech: "Canva" },
           { tech: "GoHighLevel (Civy)" },
@@ -258,7 +258,7 @@ const portfolio = {
         projectName: "Event Banner Designs",
         url: "https://aespaverseiloilo.carrd.co",
         image: "projects/aespaverse/banners.png",
-        projectDetail: "Creative posters, pubmats, and videos for fan events including a 200+ seat block screening event.",
+        projectDetail: "Creative pubmats for fan events material production",
         technologiesUsed: [
           { tech: "Canva" },
           { tech: "Photoshop" },
