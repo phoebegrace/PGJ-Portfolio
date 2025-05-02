@@ -10,7 +10,7 @@ const Languages = () => {
             if (filipino < 95) {
                 setFilipino(prev => prev + 1)
             }
-            if (english < 80) {
+            if (english < 90) {
                 setEnglish(prev => prev + 1)
             }
         }, 30)
