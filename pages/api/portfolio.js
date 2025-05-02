@@ -206,10 +206,10 @@ const portfolio = {
       },
       {
         id: 4,
-        projectName: "VVIP Challenge Funnel",
+        projectName: "Client Funnel",
         url: "#",
         image: "projects/primof/vvip.png",
-        projectDetail: "Designed a multi-page funnel for a VVIP client, including landing, upsell, thank-you, sign-in, sales, and onboarding pages. Prioritized user journey flow and visual alignment with branding.",
+        projectDetail: "Designed a multi-page funnel for a VVIP client, including landing, upsell, thank-you, sign-in, sales, event portal, and onboarding pages. Prioritized user journey flow and visual alignment with branding.",
         technologiesUsed: [
           { tech: "Canva" },
           { tech: "GoHighLevel (Civy)" },
