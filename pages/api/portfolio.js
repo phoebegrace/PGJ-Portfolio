@@ -169,8 +169,8 @@ const portfolio = {
       },
       {
         id: 1,
-        projectName: "Cris Vinson Life Coaching Funnel",
-        url: "https://automation.civy.io/v2/preview/cjKPJTon9I2VVHKwr1vh",
+        projectName: "Life Coaching Funnel",
+        url: "https://www.canva.com/design/DAGgxfaEFDU/VnCzTysqr8zesP7DCekp3g/view?utm_content=DAGgxfaEFDU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1caccb79d9",
         image: "projects/primof/crisvinson.png",
         projectDetail: "Designed a responsive coaching funnel layout and automated lead management workflows for life coaching sessions. Balanced design with strategy, ensuring a smooth user journey.",
         technologiesUsed: [
