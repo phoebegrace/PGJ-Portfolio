@@ -43,6 +43,11 @@ const expertise = [
         id: 8,
         title: 'GitHub for Collaboration',
         desc: 'I use GitHub to manage my projects, like my portfolio website, and to collaborate with others. It’s a vital tool for version control, allowing me to track changes, contribute to projects, and showcase my work to the tech community.',
+    },
+    {
+        "id": 9,
+        "title": "GoHighLevel Development",
+        "desc": "I am proficient in using GoHighLevel to develop both front-end and back-end solutions. I build engaging front-end interfaces like landing pages and forms, and implement back-end automations, workflows, and calendar integrations to create powerful, scalable web applications."
     }
 ];
 
