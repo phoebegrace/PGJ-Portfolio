@@ -5,13 +5,13 @@ export const DESIGNATION = `Web Developer | Content Editor | Sound Enthusiast`;
 export const DETAILS = {
   Residence: 'Philippines',
   City: 'Antique',
-  Age: '22',
+  Age: '23',
 };
 
 export const SKILLS = [
   {
     title: 'Web Developer',
-    level: '75%',
+    level: '90%',
   },
   {
     title: 'Wireframing',
@@ -19,23 +19,21 @@ export const SKILLS = [
   },
   {
     title: 'Content Editor',
-    level: '91%',
+    level: '100%',
   },
   {
-    title: 'Desktop Application Developer',
-    level: '55%',
-  },
-  {
-    title: 'Backend Developer',
-    level: '54%',
+    title: 'Front-end Developer',
+    level: '95%',
   },
   {
     title: 'AI & Machine Learning',
-    level: '63%',
+    level: '95%',
   },
 ];
 
 export const TECH_STACK = [
+  'GoHighLevel',
+  'Zapier',
   'JavaScript',
   'ReactJS',
   'TypeScript',
@@ -53,7 +51,7 @@ export const TECH_STACK = [
   'Spline',
   'RVC',
   'Audacity',
-  'MS Office',
+  'MS Office365',
   'Flutter',
 ];
 
